@@ -349,7 +349,7 @@ The Jacobian for the SCARA robot is given by:
 ## 🤖 10. References  
 - SCARA Robot Design Basics: [Link](https://en.wikipedia.org/wiki/SCARA)  
 - Arduino CNC Shield Documentation: [Link](https://www.aranacorp.com/en/using-an-arduino-cnc-shield-v3)  
-- Processing Language for GUI: [Link](https://howtomechatronics.com/projects/scara-robot-how-to-build-your-own-arduino-based-robot)
+- SCARA Robot | How To Build Your Own Arduino Based Robot: [Link](https://youtu.be/1QHJksTrk8s?si=geVqN3zxPEzTnQR-)
 - Scara Robot 3D Printed Parts: [Link](https://github.com/IVProjects/Engineering_Projects/tree/main/ProjectFiles/SCARA%20Robot)
   
 ---
