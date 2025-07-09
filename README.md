@@ -12,8 +12,10 @@ This repository contains the design, build process, and control of a 4-DoF SCARA
 
 <p align="center"><strong>Figure 1: Final SCARA Robot</strong></p>
 ---------------------------------------
+
 📖 1. Introduction
---------------------------------------
+
+---------------------------------------
 This project focuses on building and analyzing a SCARA (PRRR) robot arm with 4 Degrees of Freedom (DoF). It combines both kinematic analysis and practical implementation, including calculations for forward kinematics, inverse kinematics, and Jacobian analysis. The project culminates in a demonstration where the robot performs precise pick-and-place tasks and can hold objects weighing up to 0.8 kg.
 
 This SCARA robot is developed for industrial pick-and-place applications.
