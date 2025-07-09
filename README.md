@@ -35,8 +35,6 @@ https://github.com/user-attachments/assets/f581777a-0083-44fe-9ece-47c1c799fe9d
 *Figure 2: Final Robot Outcome*  
 
 ------
---
-
 ## 🔌 4. Wiring  
 
 <p align="center">
