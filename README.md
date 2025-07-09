@@ -343,6 +343,11 @@ The Jacobian for the SCARA robot is given by:
   <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/jacobian.png" alt="SCARA Robot" width="50%">
 </p>
 
+### **9.6Dynamics Equations**
+
+![image](https://github.com/user-attachments/assets/79be0b2c-bd5c-42f6-a96c-bb1011c7ee08)
+
+The solution is here :[Link](https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/kinematics%20and%20Dynamics%20by%20write/dynamics.pdf) 
 ---
 
 ## 🤖 10. References  
