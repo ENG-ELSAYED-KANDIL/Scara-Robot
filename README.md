@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/47009144-7caa-434c-969a-1781c4204510)SCARA Robot (PRRR Configuration)
+SCARA Robot (PRRR Configuration)
 -----------------------------------------
 🌟 Overview
 ----------------------------------------
