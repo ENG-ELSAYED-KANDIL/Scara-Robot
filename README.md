@@ -298,7 +298,7 @@ The table below summarizes the DH parameters for the SCARA PRRR robot:
 |---------------------|------------|------------|---------------------|--------------------|
 | 1 (Prismatic)      | 0          | 0          | d₁ (variable)       | 0                  |
 | 2 (Revolute)       | 150.8        | 0          | 0                   | θ₁ (variable)      |
-| 3 (Revolute)       | 150.8        | 0          | 0                   | θ₂ (variable)      |
+| 3 (Revolute)       | 190      | 0          | 0                   | θ₂ (variable)      |
 | 4 (Revolute)       | 160        | 0          | 0                   | θ₃ (variable)      |
 | 5                  | 0          | 0          | 600                  | 0                  |
 
