@@ -238,7 +238,20 @@ A user-friendly GUI was developed using **Python**, designed to facilitate intui
 
 - 🤖 **Gripper Control**  
   Open and close the gripper through simple GUI buttons.
-  
+
+---
+## 🖨️ 9. 3D Printed Parts
+
+The robot's design relies heavily on 3D-printed components, with over 100 hours of printing time invested to produce these parts. Each part was carefully designed to ensure functionality and precision:  
+
+- **Gears**: Over seven different types of gears were printed to enable precise torque transfer and smooth motion across the joints.  
+- **Link Components**: Critical parts for Link 1, Link 2, and Link 3 were printed to form the main structure of the robotic arm, allowing for stable and accurate joint movements.  
+- **Z Holder**: This component supports the prismatic joint, ensuring reliable vertical motion and alignment.  
+- **Limit Switch Contactors**: Custom 3D-printed parts that interact with limit switches to facilitate homing and accurate position detection.  
+- **Gripper Mechanism**: Includes the gripping claws and structural supports necessary for securely holding objects during operation.  
+- **Support Structures**: Temporary structures were printed alongside the main components to maintain the integrity of complex shapes during the printing process.  
+
+These parts were printed using PLA+ material for durability and dimensional accuracy. All STL files are organized and available in the `/3D-Printed-Parts.rar` folder for easy access and replication.  
 
 ---
 
