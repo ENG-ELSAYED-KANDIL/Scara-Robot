@@ -316,12 +316,18 @@ By multiplying the individual transformation matrices from base to end-effector,
   <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/forward.png" alt="SCARA Robot" width="50%">
 </p>
 
-### **11.5Forward Kinematics**
+### **11.Inverse Kinematics**
 
-Forward kinematics calculates the position and orientation of the end-effector based on the joint angles and link lengths. Using Denavit-Hartenberg (DH) parameters, we define the transformation matrix for each joint. The transformation matrix is:
+Inverse kinematics determines the required joint angles based on the desired position of the end-effector. Given the end-effector's target position (x, y, z), and using the known link lengths, we calculate the angles θ₁, θ₂, and the displacement d₄ (for prismatic joints if applicable).
+
+The inverse kinematics process involves solving geometric equations or using trigonometric identities to find the joint variables that place the end-effector at the desired location. For a SCARA robot, this typically involves solving for:
+
+θ₁ and θ₂ using planar geometry in the x-y plane
+
+d₄ from the z-position of the end-effector
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/55f509af-13c3-474f-8a48-537ff5206caa" alt="SCARA Robot" width="50%">
+  <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/inverse.png" alt="SCARA Robot" width="50%">
 </p>
 By multiplying the individual transformation matrices from base to end-effector, we get the final transformation matrix T . This matrix provides the position (x, y, z) and the orientation of the end-effector. The angles θ1, θ2, and θ3 are used to determine the robot’s orientation in space.
 
