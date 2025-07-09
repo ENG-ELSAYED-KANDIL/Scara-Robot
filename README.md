@@ -208,7 +208,7 @@ The robot is programmed to pick objects from a defined source and place them in 
 
 In the pick-and-place application, I saved 8 waypoints starting from its home position. Using the GUI, I configured these waypoints, which helped to better understand the movement of the joints and the gripper. After saving the waypoints and running the sequence, I achieved the following output:  
 
-**Pick and Place Output** - https://github.com/maduwanthasl/Scara-Robot/blob/main/Videos/Pick%20and%20place/Pick%20and%20place.mp4
+**Pick and Place Output** - https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Videos/pick%20%26%20place.mp4
 
 
 ---
