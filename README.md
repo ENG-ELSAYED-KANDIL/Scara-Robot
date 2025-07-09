@@ -313,11 +313,7 @@ Forward kinematics calculates the position and orientation of the end-effector b
 By multiplying the individual transformation matrices from base to end-effector, we get the final transformation matrix T . This matrix provides the position (x, y, z) and the orientation of the end-effector. The angles θ1, θ2, and θ3 are used to determine the robot’s orientation in space.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/88b55576-af50-4bdb-9f5c-051f1642d028" alt="SCARA Robot" width="50%">
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/ec2ee10e-e7f9-4a29-92f0-bf62982926e4" alt="SCARA Robot" width="50%">
+  <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/forward.png" alt="SCARA Robot" width="50%">
 </p>
 
 The Jacobian is derived using the partial derivatives of the forward kinematics equations.  
