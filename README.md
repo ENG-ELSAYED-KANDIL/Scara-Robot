@@ -35,7 +35,7 @@ https://github.com/user-attachments/assets/f581777a-0083-44fe-9ece-47c1c799fe9d
 *Figure 2: Final Robot Outcome*  
 
 ------
-## 🔌 4. Wiring  
+## 🔌 3. Wiring  
 
 <p align="center">
   <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/Wiring.png" width="50%">
@@ -47,16 +47,16 @@ https://github.com/user-attachments/assets/f581777a-0083-44fe-9ece-47c1c799fe9d
  
 The wiring connects stepper motors, the CNC shield, and the Arduino Uno. Here are the main considerations and steps followed:  
 
-### **4.1 Motor Silence and Calibration**  
+### **3.1 Motor Silence and Calibration**  
 In wiring, I primarily focused on reducing motor noise. To achieve smooth motor operation, the current limit of the motor drivers was carefully adjusted. This calibration ensures precise motor activation. Setting an incorrect value can cause the motor drivers to overheat and potentially damage them. To further enhance motor precision, I adjusted the precision selector to 1/4 or 1/8 microstepping.
 
-### **4.2 Connections and Testing**  
+### **3.2 Connections and Testing**  
 I connected the motor wiring as shown in the diagram and tested the connections with an oscilloscope and multimeter. Limit switches were placed at the corners of the joints' movement range to allow maximum rotational angles. After placing the limit switches, I assigned the pins for X+, Y+, Z+, and coolant functionalities.  
 
-### **4.3 Servo Motor Powering**  
+### **3.3 Servo Motor Powering**  
 Since servo motors require a stable current, I initially tested them using the Arduino Uno with the CNC shield. However, the servo motor only received 3V from this setup, which was insufficient. To address this, I powered the servo motor separately using a 5V power supply.  
 
-### **4.4 Power Supply Configuration**  
+### **3.4 Power Supply Configuration**  
 To power the entire system, which includes:  
 - Four NEMA 17 stepper motors  
 - Arduino Uno with CNC shield  
@@ -65,13 +65,13 @@ To power the entire system, which includes:
 
 I decided to use a 12V 10A power supply. A 12V 5A power supply would not have been sufficient to run all motors simultaneously.  
 
-### **4.5 Cable Management**  
+### **3.5 Cable Management**  
 For clean and organized wiring, I used “Spiral Wire Wrapping Tube Cable Sleeves” and secured them with tie tags. This arrangement keeps the wires neat and minimizes clutter.  
 
-### **4.6 Testing**  
+### **3.6 Testing**  
 To test all motors, I used simple Arduino code to verify their operation. This helped ensure that the motors, limit switches, and control pins were functioning as expected.  
 
-### **4.7 Key Points**  
+### **3.7 Key Points**  
 - **Shielded cables** were used for stepper motors to reduce electrical noise.  
 - Correct polarity was ensured to avoid reversing motor directions.  
 - The 12V DC power supply provided reliable power for the entire system.  
@@ -79,7 +79,7 @@ To test all motors, I used simple Arduino code to verify their operation. This h
 
 ---
 
-## 🏠 5. Homing Sequence
+## 🏠 4. Homing Sequence
 The homing sequence ensures that the robot starts from a known position:  
 
 - The prismatic joint retracts to the lowest position.  
@@ -89,7 +89,7 @@ The homing sequence ensures that the robot starts from a known position:
 As you can see in the video, the homing sequence begins with the gripper motor (joint 3). To determine the homing position, I used limit switches along with the following code:  
 ---
 
-## 🏠 5. Homing Sequence
+## 🏠 4. Homing Sequence
 The homing sequence ensures that the robot starts from a known position:  
 
 - The prismatic joint retracts to the lowest position.  
@@ -197,7 +197,7 @@ void homeStepperZ() {
 ```
 **Homing** - https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Videos/WhatsApp%20Video%202025-06-26%20at%207.13.10%20PM.mp4
 ---
-## 🧩 6. Pick and Place Application
+## 🧩 5. Pick and Place Application
 The robot is programmed to pick objects from a defined source and place them in a target location.  
 
 - Move to the pick position using the prismatic and revolute joints.  
@@ -209,7 +209,7 @@ In the pick-and-place application, I saved 8 waypoints starting from its home po
 **Pick and Place Output** - https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Videos/pick%20%26%20place.mp4
 ---
 
-## 🖥️ 7.**Graphical User Interface (GUI)**
+## 🖥️ 6.**Graphical User Interface (GUI)**
 
 <p align="center">
   <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/SCARA_ROBOT_GUI2/11.png" alt="SCARA Robot" width="50%">
@@ -240,7 +240,7 @@ A user-friendly GUI was developed using **Python**, designed to facilitate intui
   Open and close the gripper through simple GUI buttons.
 
 ---
-## 🖨️ 9. 3D Printed Parts
+## 🖨️ 7. 3D Printed Parts
 
 The robot's design relies heavily on 3D-printed components, with over 100 hours of printing time invested to produce these parts. Each part was carefully designed to ensure functionality and precision:  
 
@@ -256,7 +256,7 @@ These parts were printed using PLA+ material for durability and dimensional accu
 
 ---
 
-## 🔗 10. Code Explanation
+## 🔗 8. Code Explanation
 The robot is programmed using Arduino Uno, with future plans to transition to AVR register-based programming for enhanced control. The key programming aspects include:  
 
 - **Forward Kinematics**: Calculates the end-effector position based on joint values, ensuring precise movement to desired coordinates.  
@@ -274,9 +274,9 @@ Future iterations will focus on optimizing the code and exploring advanced micro
 
 
 
-## 🎛️  11. Robot Details and Calculations
+## 🎛️  9. Robot Details and Calculations
 
-### **11.1 Link Dimensions and Specifications**  
+### **9.1 Link Dimensions and Specifications**  
 The SCARA robot has **4 Degrees of Freedom (DoF)** with a **PRRR joint configuration**.  
 
 **Link Dimensions**:  
@@ -286,12 +286,12 @@ The SCARA robot has **4 Degrees of Freedom (DoF)** with a **PRRR joint configura
 - d4 = 600mm — Prismatic joint length   
 
 
-### **11.2 Coordinate Frame Assignment**  
+### **9.2 Coordinate Frame Assignment**  
 The following figure illustrates the coordinate frame assignment for the SCARA PRRR robot, adhering to the Denavit-Hartenberg (DH) convention:  
 
 ![Coordinate Frame Assignment](https://github.com/maduwanthasl/Scara-Robot/blob/main/Pictures/Coordinate%20Frames.jpg)  
 
-### **11.3 DH Table**  
+### **9.3 DH Table**  
 The table below summarizes the DH parameters for the SCARA PRRR robot:  
 
 | **Joint (i)**      | **aᵢ (mm)** | **αᵢ (°)** | **dᵢ (mm)**         | **θᵢ (°)**         |
@@ -303,7 +303,7 @@ The table below summarizes the DH parameters for the SCARA PRRR robot:
 | 5                  | 0          | 0          | 600                  | 0                  |
 
 
-### **11.4Forward Kinematics**
+### **9.4Forward Kinematics**
 
 Forward kinematics calculates the position and orientation of the end-effector based on the joint angles and link lengths. Using Denavit-Hartenberg (DH) parameters, we define the transformation matrix for each joint. The transformation matrix is:
 
@@ -316,7 +316,7 @@ By multiplying the individual transformation matrices from base to end-effector,
   <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/forward.png" alt="SCARA Robot" width="50%">
 </p>
 
-### **11.5Inverse Kinematics**
+### **9.5Inverse Kinematics**
 
 Inverse kinematics determines the required joint angles based on the desired position of the end-effector. Given the end-effector's target position (x, y, z), and using the known link lengths, we calculate the angles θ₁, θ₂, and the displacement d₄ (for prismatic joints if applicable).
 
@@ -332,7 +332,7 @@ d₄ from the z-position of the end-effector
 
 The Jacobian is derived using the partial derivatives of the forward kinematics equations.  
 
-### **11.6Manipulator Jacobian Matrix**
+### **9.6Manipulator Jacobian Matrix**
 The Jacobian matrix relates joint velocities to end-effector velocities. It is essential for analyzing the robot’s motion and controlling its speed and acceleration. For a PRRR manipulator, the Jacobianmatrix has two parts:
 
 - Linear Velocity: The part of the Jacobian that maps joint velocities to linear velocities of the end-effector. It involves the cross product between the joint axes and the position vector.
@@ -346,7 +346,7 @@ The Jacobian for the SCARA robot is given by:
 
 ---
 
-## 🤖 13. References  
+## 🤖 10. References  
 - SCARA Robot Design Basics: [Link](https://en.wikipedia.org/wiki/SCARA)  
 - Arduino CNC Shield Documentation: [Link](https://www.aranacorp.com/en/using-an-arduino-cnc-shield-v3)  
 - Processing Language for GUI: [Link](https://howtomechatronics.com/projects/scara-robot-how-to-build-your-own-arduino-based-robot)
