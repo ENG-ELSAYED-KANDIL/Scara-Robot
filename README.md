@@ -209,19 +209,36 @@ In the pick-and-place application, I saved 8 waypoints starting from its home po
 **Pick and Place Output** - https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Videos/pick%20%26%20place.mp4
 ---
 
-## 🖥️ 7. GUI  
+## 🖥️ 7.**Graphical User Interface (GUI)**
 
 <p align="center">
   <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/SCARA_ROBOT_GUI2/11.png" alt="SCARA Robot" width="50%">
 </p>
 
-A user-friendly GUI is developed using **Processing**.  
+A user-friendly GUI was developed using **Python**, designed to facilitate intuitive control and monitoring of the SCARA robot.
 
-### **Features**  
-- Joint control via sliders and buttons.  
-- Position control for end-effector coordinates.  
-- Real-time feedback for joint angles and positions.  
-- Gripper control for opening/closing actions.    
+---
+
+### **🔧 Key Features**
+
+- 🎚️ **Joint Control**  
+  Control robot joints individually using interactive sliders and buttons.
+
+- 🎯 **End-Effector Positioning**  
+  Direct control of the end-effector through coordinate input (X, Y, Z).
+
+- 🎥 **Object Detection via Camera**  
+  Real-time object detection using an integrated camera feed.
+
+- 🧠 **Task Sequencing**  
+  Ability to assign a sequence of tasks for the robot to execute automatically.
+
+- 📈 **Real-Time Feedback**  
+  Continuous monitoring of joint angles and current position.
+
+- 🤖 **Gripper Control**  
+  Open and close the gripper through simple GUI buttons.
+  
 
 ---
 
