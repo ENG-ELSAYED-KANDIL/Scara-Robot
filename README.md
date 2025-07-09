@@ -316,7 +316,7 @@ By multiplying the individual transformation matrices from base to end-effector,
   <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/forward.png" alt="SCARA Robot" width="50%">
 </p>
 
-### **11.Inverse Kinematics**
+### **11.5Inverse Kinematics**
 
 Inverse kinematics determines the required joint angles based on the desired position of the end-effector. Given the end-effector's target position (x, y, z), and using the known link lengths, we calculate the angles θ₁, θ₂, and the displacement d₄ (for prismatic joints if applicable).
 
@@ -329,12 +329,6 @@ d₄ from the z-position of the end-effector
 <p align="center">
   <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/inverse.png" alt="SCARA Robot" width="50%">
 </p>
-By multiplying the individual transformation matrices from base to end-effector, we get the final transformation matrix T . This matrix provides the position (x, y, z) and the orientation of the end-effector. The angles θ1, θ2, and θ3 are used to determine the robot’s orientation in space.
-
-<p align="center">
-  <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/forward.png" alt="SCARA Robot" width="50%">
-</p>
-
 
 The Jacobian is derived using the partial derivatives of the forward kinematics equations.  
 
