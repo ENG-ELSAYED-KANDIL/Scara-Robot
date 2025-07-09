@@ -89,3 +89,115 @@ The homing sequence ensures that the robot starts from a known position:
 - Limit switches provide feedback to confirm positions.  
 
 As you can see in the video, the homing sequence begins with the gripper motor (joint 3). To determine the homing position, I used limit switches along with the following code:  
+---
+
+## 🏠 5. Homing Sequence
+The homing sequence ensures that the robot starts from a known position:  
+
+- The prismatic joint retracts to the lowest position.  
+- Each revolute joint rotates to its home angle.  
+- Limit switches provide feedback to confirm positions.  
+
+As you can see in the video, the homing sequence begins with the gripper motor (joint 3). To determine the homing position, I used limit switches along with the following code:  
+
+```cpp
+//HOMING PROCESS
+void homeRobot() {
+  delay(1000);
+  homeStepper2();
+  homeStepper1();
+  homeStepper3();
+  homeStepperZ();
+  isHomed = true;
+  Serial.println("oK");
+}
+
+// joint 1
+void homeStepper1() {
+  stepper1.setCurrentPosition(0);
+  stepper1.setSpeed(-1100);
+
+  while (digitalRead(X_LIMIT_MIN) == 1) {
+    stepper1.runSpeed();
+  }
+
+  delay(20);
+
+  stepper1.setCurrentPosition(-maxDistance1);
+
+  stepperPosition1 = 0;
+  stepper1.moveTo(stepperPosition1);
+
+  while (stepper1.currentPosition() != stepperPosition1) {
+    stepper1.run();
+  }
+
+}
+
+
+void homeStepper2() {
+  stepper2.setCurrentPosition(0);
+  stepper2.setSpeed(-1300);
+
+  while (digitalRead(Y_LIMIT_MIN) == 1) {
+    stepper2.runSpeed();
+  }
+
+  delay(20);
+
+  stepper2.setCurrentPosition(-maxDistance2);
+
+  stepperPosition2 = 0;
+  stepper2.moveTo(stepperPosition2);
+
+  while (stepper2.currentPosition() != stepperPosition2) {
+    stepper2.run();
+  }
+
+}
+
+//joint 3
+void homeStepper3() {
+  stepper3.setCurrentPosition(0);
+  stepper3.setSpeed(-1300);
+
+  while (digitalRead(GRIPPER_LIMIT) == 1) {
+    stepper3.runSpeed();
+  }
+
+  delay(20);
+
+  stepper3.setCurrentPosition(-maxDistance3);
+
+  stepperPosition3 = 0;
+  stepper3.moveTo(stepperPosition3);
+
+  while (stepper3.currentPosition() != stepperPosition3) {
+    stepper3.run();
+  }
+}
+
+void homeStepperZ() {
+  stepperZ.setCurrentPosition(0);
+  stepperZ.setSpeed(1100);
+
+  while (digitalRead(Z_LIMIT_MIN) == 1) {
+    stepperZ.runSpeed();
+  }
+
+  delay(20);
+  stepperZ.setCurrentPosition(0); /// max distance
+
+  stepperZ.moveTo(maxDistanceZ); // 55 mm
+
+  while (stepperZ.currentPosition() != maxDistanceZ) {
+    stepperZ.run();
+  }
+
+}
+
+```
+**Homing** - https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Videos/WhatsApp%20Video%202025-06-26%20at%207.13.10%20PM.mp4
+
+
+---
