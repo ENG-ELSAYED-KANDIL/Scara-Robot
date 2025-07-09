@@ -316,9 +316,23 @@ By multiplying the individual transformation matrices from base to end-effector,
   <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/forward.png" alt="SCARA Robot" width="50%">
 </p>
 
+### **11.5Forward Kinematics**
+
+Forward kinematics calculates the position and orientation of the end-effector based on the joint angles and link lengths. Using Denavit-Hartenberg (DH) parameters, we define the transformation matrix for each joint. The transformation matrix is:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/55f509af-13c3-474f-8a48-537ff5206caa" alt="SCARA Robot" width="50%">
+</p>
+By multiplying the individual transformation matrices from base to end-effector, we get the final transformation matrix T . This matrix provides the position (x, y, z) and the orientation of the end-effector. The angles θ1, θ2, and θ3 are used to determine the robot’s orientation in space.
+
+<p align="center">
+  <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/forward.png" alt="SCARA Robot" width="50%">
+</p>
+
+
 The Jacobian is derived using the partial derivatives of the forward kinematics equations.  
 
-### **11.5Manipulator Jacobian Matrix**
+### **11.6Manipulator Jacobian Matrix**
 The Jacobian matrix relates joint velocities to end-effector velocities. It is essential for analyzing the robot’s motion and controlling its speed and acceleration. For a PRRR manipulator, the Jacobianmatrix has two parts:
 
 - Linear Velocity: The part of the Jacobian that maps joint velocities to linear velocities of the end-effector. It involves the cross product between the joint axes and the position vector.
@@ -327,7 +341,7 @@ The Jacobian matrix relates joint velocities to end-effector velocities. It is e
 The Jacobian for the SCARA robot is given by:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d17c3fa6-750b-44d6-ae88-0843819cb8f3" alt="SCARA Robot" width="50%">
+  <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/jacobian.png" alt="SCARA Robot" width="50%">
 </p>
 
 ---
