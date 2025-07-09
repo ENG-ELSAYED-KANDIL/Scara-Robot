@@ -207,7 +207,22 @@ The robot is programmed to pick objects from a defined source and place them in 
 In the pick-and-place application, I saved 8 waypoints starting from its home position. Using the GUI, I configured these waypoints, which helped to better understand the movement of the joints and the gripper. After saving the waypoints and running the sequence, I achieved the following output:  
 
 **Pick and Place Output** - https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Videos/pick%20%26%20place.mp4
+---
 
+## 🖥️ 7. GUI  
+
+<p align="center">
+  <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/SCARA_ROBOT_GUI2/1.png" alt="SCARA Robot" width="50%">
+</p>
+
+A user-friendly GUI is developed using **Processing**.  
+
+### **Features**  
+- Joint control via sliders and buttons.  
+- Position control for end-effector coordinates.  
+- Real-time feedback for joint angles and positions.  
+- Gripper control for opening/closing actions.    
 
 ---
+
 
