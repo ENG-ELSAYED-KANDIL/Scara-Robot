@@ -1,4 +1,4 @@
-SCARA Robot (PRRR Configuration)
+![image](https://github.com/user-attachments/assets/47009144-7caa-434c-969a-1781c4204510)SCARA Robot (PRRR Configuration)
 -----------------------------------------
 🌟 Overview
 ----------------------------------------
@@ -348,6 +348,23 @@ The Jacobian for the SCARA robot is given by:
 ![image](https://github.com/user-attachments/assets/79be0b2c-bd5c-42f6-a96c-bb1011c7ee08)
 
 The solution is here :[Link](https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/kinematics%20and%20Dynamics%20by%20write/dynamics.pdf) 
+
+### **9.7Computed Torque Control**
+Computed Torque Control is a model-based control strategy used to control the motion of robotic manipulators. The key idea behind CTC is to compensate for the robot's dynamics by applying the necessary torques at the joints to achieve a desired trajectory.
+CTC involves:
+Trajectory Planning: A desired trajectory or reference trajectory is defined for the robot, usually in terms of joint angles, velocities, and accelerations.
+Inverse kinematics: Inverse kinematics is used to calculate the joint angles required to achieve a specific end-effector position. Small errors in these calculations can lead to significant deviations in the robot's movement.
+Modeling Dynamics: The robot's dynamics are modeled, typically using the inverse dynamics equations. This allows for the computation of the torques required to track the desired trajectory.
+Feedback Control: A feedback loop is used to adjust the control input in real-time. The control input typically involves both the desired torques (calculated from the inverse dynamics) and any necessary feedback gains (like PD or PID control).
+Forward kinematics : used to calculate the final position and orientation of the robot's end-effector based on the angles or displacements of each joint in the robotic arm.
+
+### **9.8Simulink Simulation**
+![image](https://github.com/user-attachments/assets/7b2ef396-cb42-4228-9360-28c556bef0e6)
+
+System Simulation:
+
+https://github.com/user-attachments/assets/358b40ac-75ad-4ba7-8ce4-bd9f127024b1
+
 ---
 
 ## 🤖 10. References  
