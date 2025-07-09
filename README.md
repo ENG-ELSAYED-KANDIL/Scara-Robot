@@ -212,7 +212,7 @@ In the pick-and-place application, I saved 8 waypoints starting from its home po
 ## 🖥️ 7. GUI  
 
 <p align="center">
-  <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/SCARA_ROBOT_GUI2/1.png" alt="SCARA Robot" width="50%">
+  <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/SCARA_ROBOT_GUI2/11.png" alt="SCARA Robot" width="50%">
 </p>
 
 A user-friendly GUI is developed using **Processing**.  
