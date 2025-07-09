@@ -289,7 +289,7 @@ The SCARA robot has **4 Degrees of Freedom (DoF)** with a **PRRR joint configura
 ### **9.2 Coordinate Frame Assignment**  
 The following figure illustrates the coordinate frame assignment for the SCARA PRRR robot, adhering to the Denavit-Hartenberg (DH) convention:  
 
-![Coordinate Frame Assignment](https://github.com/maduwanthasl/Scara-Robot/blob/main/Pictures/Coordinate%20Frames.jpg)  
+![Coordinate Frame Assignment](https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/Coordinate%20Frames.jpg)  
 
 ### **9.3 DH Table**  
 The table below summarizes the DH parameters for the SCARA PRRR robot:  
@@ -308,7 +308,7 @@ The table below summarizes the DH parameters for the SCARA PRRR robot:
 Forward kinematics calculates the position and orientation of the end-effector based on the joint angles and link lengths. Using Denavit-Hartenberg (DH) parameters, we define the transformation matrix for each joint. The transformation matrix is:
 
 <p align="center">
-  <img src="https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/blob/main/Pictures/Coordinate%20Frames.jpg" alt="SCARA Robot" width="50%">
+  <img src="https://github.com/user-attachments/assets/55f509af-13c3-474f-8a48-537ff5206caa" alt="SCARA Robot" width="50%">
 </p>
 By multiplying the individual transformation matrices from base to end-effector, we get the final transformation matrix T . This matrix provides the position (x, y, z) and the orientation of the end-effector. The angles θ1, θ2, and θ3 are used to determine the robot’s orientation in space.
 
