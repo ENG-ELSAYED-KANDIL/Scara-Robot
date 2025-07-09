@@ -372,7 +372,7 @@ https://github.com/user-attachments/assets/358b40ac-75ad-4ba7-8ce4-bd9f127024b1
 - SCARA Robot Design Basics2: [Link](https://github.com/ENG-ELSAYED-KANDIL/Scara-Robot/upload/main)  
 - Arduino CNC Shield Documentation: [Link](https://www.aranacorp.com/en/using-an-arduino-cnc-shield-v3)  
 - SCARA Robot | How To Build Your Own Arduino Based Robot: [Link](https://youtu.be/1QHJksTrk8s?si=geVqN3zxPEzTnQR-)
-- Scara Robot 3D Printed Parts: [Link](https://github.com/IVProjects/Engineering_Projects/tree/main/ProjectFiles/SCARA%20Robot)
+
   
 ---
 
